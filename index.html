@@ -10,17 +10,17 @@
 </head>
 <body>
     <div class="container-fluid" style="display: flex; justify-content: center; padding-top: 0.2%;">
-        <h2 class="text-danger">DEMO MÔN TRÍ TUỆ NHÂN TẠO (IT4040) </h2>  
+        <h2 class="text-danger">DEMO MÔN TRÍ TUỆ NHÂN TẠO (IT1341) </h2>  
     </div>
     <div class="container-fluid" style="display: flex; justify-content: center; padding-bottom: 1%;">
-       <h3 class="text-danger">Áp dụng A* tìm đường đi trong mê cung</h3>
+       <h3 class="text-danger">Sử dụng thuật toán tìm kiếm A* để tìm ra đường đi ngắn nhất từ điểm xuất phát đến điểm đích trong một lưới không gian 2 chiều có vật cản</h3>
     </div>
     <div class="row" id="hold">
         <div class="col-5">
-            <h3 class="text-danger" style="text-align: center">Nhóm 7:</h3>
-            <h5 class="text-danger" style="text-align: center; padding-left: 2%; padding-bottom: 3% ">Giảng viên hướng dẫn: Nguyễn Nhật Quang</h5>
-            <h5 class="text-danger" style="text-align: center; padding-left: 2%; padding-bottom: 3% ">Sinh viên: Lê Trọng Đức - Đỗ Ngọc Sơn</h5>
-            <h5 class="text-danger" style="text-align: center; padding-left: 2%; padding-bottom: 3% "> Nguyễn Nhật Quang</h5>
+            <h3 class="text-danger" style="text-align: center">Nhóm 4:</h3>
+            <h5 class="text-danger" style="text-align: center; padding-left: 2%; padding-bottom: 3% ">Giảng viên hướng dẫn: Nguyễn Đình Quân</h5>
+            <h5 class="text-danger" style="text-align: center; padding-left: 2%; padding-bottom: 3% ">Sinh viên: </h5>
+
             <form class="content">
                 <div class="option">
                     <label class="form-check-label" for="exampleCheck1">Chọn chế độ nước đi</label>
@@ -85,14 +85,24 @@
                     </div>
                     <div class="option">
                         <p>Mode: <span id="mode">Select source and destination</span></p>
-                        <button type="button" class="btn btn-success col-5" id="createMaze">Maze Generating</button>
-                        <button type="button" class="btn btn-success col-7" id="selectSD">Select Source-Destination</button>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-success w-100" id="createMaze">Maze Generating</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-success w-100" id="selectSD">Select Source-Destination</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="option">
-                        <p>Kết quả:</p>
+                        <p>Kết quả</p>
                         <p>Số ô trên đường đi: <span id="result"></span></p>
                         <p>Tổng chi phí đường đi: <span id="cost"></span></span></p>
                         <p>Số ô phải xét: <span id="considered"></span></span></p>
+                    </div>
+                    <div class="option">
+                        <p>Tốc độ vẽ đường đi: <span id="speed-value">10</span> FPS</p>
+                        <input type="range" class="form-control-range" id="speed-slider" min="1" max="100" value="10">
                     </div>
                     <button type="button" class="btn btn-success" id="clearMaze">Clear Maze</button>
                     <button type="button" class="btn btn-success" id="reload">New Session</button>

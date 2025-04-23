@@ -450,8 +450,10 @@ function mousePressed(){
 }
 
 var indexConsidered = 0;
+var drawSpeed = 10; // Tốc độ vẽ mặc định
+
 function draw(){
-    frameRate(60);
+    frameRate(drawSpeed);
     if(source == null || destination == null){
         noLoop();
     } else{
@@ -484,6 +486,12 @@ function draw(){
 
 $("#reload").on("click", function(){
     location.reload();
+})
+
+// Thêm chức năng điều chỉnh tốc độ vẽ
+$("#speed-slider").on("input", function(){
+    drawSpeed = parseInt($(this).val());
+    $("#speed-value").text(drawSpeed);
 })
 
 $("#createMaze").on("click", function(){
