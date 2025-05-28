@@ -2,13 +2,13 @@
 
 ## Giới thiệu
 
-Project này là bài tập lớn môn Trí tuệ nhân tạo (học kì 20181)
+Project này là bài tập lớn môn Trí tuệ nhân tạo
 
 Giảng viên hướng dẫn: TS.Nguyễn Nhật Quang
 
 Sinh viên thực hiện: Lê Trọng Đức - Đỗ Ngọc Sơn
 
-[Truy cập đường link để trực tiếp phần demo](https://ducletrong.github.io/demo-a-start-alogrithm-heuristic/)
+[Truy cập đường link để trực tiếp phần demo](https://duonghailuu0904.github.io/demo-a-start-alogrithm-heuristic/)
 
 ## Lời nói đầu
 
